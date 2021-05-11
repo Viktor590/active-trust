@@ -211,9 +211,12 @@
 .slick-next.slick-arrow {
   width: 45px;
   height: 37px;
-  img{
-    width: 19px;
-    height: 16px;
+  &:hover{
+    path{
+      fill: #fff;
+      fill-opacity: 1;
+    }
+    background-color: #027BFD;
   }
 }
 
