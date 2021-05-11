@@ -1,5 +1,4 @@
 @import 'vars';
-@import 'fonts';
 @import 'reset';
 @import 'libs';
 @import 'global';
@@ -217,6 +216,56 @@
       fill-opacity: 1;
     }
     background-color: #027BFD;
+  }
+}
+
+.gallery{
+  background-color: $bg-black;
+  &__title{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    color: #fff;
+    padding: 100px 0 60px;
+  }
+  &__wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px 40px;
+  }
+  &__item{
+    max-width: 580px;
+    height: 380px;
+  }
+  &__item-img{
+    width: 580px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  &__link{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    text-align: right;
+    text-transform: uppercase;
+    padding: 20px 40px 35px 0;
+    transition: all .3s;
+    position: relative;
+    &:hover{
+      color: #59A8FD;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/arrow-right.svg');
+      width: 19px;
+      height: 16px;
+      top: 25px;
+      right: 0;
+    }
   }
 }
 

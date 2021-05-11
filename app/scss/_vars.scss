@@ -1,2 +1,10 @@
 $bg-white: #E1E8F4;
 $bg-black: #090909;
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
