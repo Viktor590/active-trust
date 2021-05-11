@@ -1,9 +1,9 @@
 $(function () {
-  $(".header-top__inner a").on("click", "a", function (event) {
-    event.preventDefault();
+  $(".header__nav-item a").on("click", function (e) {
+    e.preventDefault();
     var id = $(this).attr('href'),
       top = $(id).offset().top;
-    $('body,html').animate({ scrollTop: top }, 1500);
+    $('body,html').animate({ scrollTop: top }, 1000);
   });
 
   $('.service-slider__inner').slick({
