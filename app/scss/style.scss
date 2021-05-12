@@ -18,10 +18,8 @@
   &-top__inner{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 40px;
-  }
-  &__nav{
-    display: flex;
   }
   &__nav-item{
     display: flex;
@@ -108,7 +106,7 @@
         right: -74px;
       }
     }
-    &-bottom-img{
+    &-bottom__img{
       max-width: 50%;
     }
 }
