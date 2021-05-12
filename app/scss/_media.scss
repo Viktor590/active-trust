@@ -4,6 +4,20 @@
       font-size: 14px;
     }
   }
+  .service{
+  &-top__text{
+    font-size: 16px;
+  }
+  &-slider__title{
+    font-size: 27px;
+  }
+ }
+ .slick-prev {
+   left: 60%;
+ }
+ .slick-next {
+   right: 27%;
+ }
 }
 
 @media(max-width:769px){
@@ -85,6 +99,11 @@
       display: none;
     }
  }
+ .service {
+   &-top__img {
+     max-width: 30%;
+   }
+ }
 }
 @media(max-width:550px){
   .header{
@@ -96,6 +115,18 @@
       &::before{
         display: none;
      }
+    }
+  }
+  .service{
+    &-top__text{
+      font-size: 14px;
+    }
+    &-slider{
+      padding-bottom: 30px;
+    }
+    &-slider__title{
+      font-size: 20px;
+      margin: 15px 0;
     }
   }
 }

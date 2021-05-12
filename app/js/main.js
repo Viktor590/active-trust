@@ -22,21 +22,24 @@ $(function () {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
+          dots: false
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 769,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          autoplay: true,
+          arrows: false
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          arrows: false
         }
       }
     ]
