@@ -39,6 +39,13 @@
      left: 235px;
    }
  }
+ .contacts{
+   &__info-phone--mobile{
+     display: block;
+     padding-right: 0;
+     max-width: 355px;
+   }
+ }
 }
 
 @media(max-width:769px){
@@ -136,6 +143,25 @@
      margin-left: 110px;
    }
  }
+ .contacts {
+   &__inner{
+     padding: 15px 0;
+   }
+   &__info-title{
+     padding-bottom: 35px;
+   }
+   &__form-input--name,
+   &__form-input--phone,
+   &__form-input--mail{
+     width: 250px;
+   }
+   &__form-btn{
+     width: 250px;
+     &::after{
+       right: 20px;
+     }
+   }
+ }
 }
 @media(max-width:550px){
   .header{
@@ -193,6 +219,20 @@
      &__bottom-link::after {
        top: -261px;
        left: 193px;
+     }
+   }
+   .contacts{
+     &__inner{
+       display: block;
+     }
+     &__info-mail{
+       padding: 40px 0 40px;
+     }
+     &__info-social{
+       padding-bottom: 20px;
+     }
+     &__form{
+       padding: 0 25px;
      }
    }
 }
