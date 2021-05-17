@@ -46,6 +46,23 @@
      max-width: 355px;
    }
  }
+ .footer{
+   &__inner{
+    padding: 40px 0 0;
+    display: block;
+   }
+   &__item{
+     padding-bottom: 40px;
+   }
+   &__item-download{
+     &::before{
+       left: 253px;
+     }
+     &::after{
+       left: 245px;
+     }
+   }
+ }
 }
 
 @media(max-width:769px){
